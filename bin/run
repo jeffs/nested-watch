@@ -1,0 +1,7 @@
+#!/bin/sh
+
+docker container run \
+  --rm --interactive --tty \
+  --hostname=nested --name=nested \
+  -v $(PWD)/src:/mnt/src \
+  nested-watch
